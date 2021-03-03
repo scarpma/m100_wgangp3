@@ -1,0 +1,2254 @@
+2021-03-01 12:57:30.970288: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+WARNING: Logging before flag parsing goes to stderr.
+W0301 12:58:11.301797 35184372370416 deprecation.py:506] From /cineca/prod/opt/libraries/wmlce/1.6.2/none/lib/python3.7/site-packages/tensorflow_core/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0301 12:58:11.302327 35184372370416 deprecation.py:506] From /cineca/prod/opt/libraries/wmlce/1.6.2/none/lib/python3.7/site-packages/tensorflow_core/python/ops/init_ops.py:97: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0301 12:58:11.337123 35184372370416 deprecation.py:506] From /cineca/prod/opt/libraries/wmlce/1.6.2/none/lib/python3.7/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0301 12:58:11.382480 35184372370416 deprecation.py:506] From /cineca/prod/opt/libraries/wmlce/1.6.2/none/lib/python3.7/site-packages/tensorflow_core/python/ops/init_ops.py:97: calling Ones.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0301 12:58:12.113918 35184372370416 deprecation.py:506] From /cineca/prod/opt/libraries/wmlce/1.6.2/none/lib/python3.7/site-packages/tensorflow_core/python/ops/init_ops.py:97: calling GlorotUniform.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0301 12:58:12.237664 35184372370416 hdf5_format.py:191] No training configuration found in save file: the model was *not* compiled. Compile it manually.
+2021-03-01 12:58:12.378144: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-03-01 12:58:12.528866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+2021-03-01 12:58:12.528912: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-01 12:58:12.773002: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-03-01 12:58:12.896613: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-03-01 12:58:13.042863: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-03-01 12:58:13.332799: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-03-01 12:58:13.478337: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-03-01 12:58:14.125013: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-01 12:58:14.136584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-03-01 12:58:14.243554: I tensorflow/core/platform/profile_utils/cpu_utils.cc:101] CPU Frequency: 3800000000 Hz
+2021-03-01 12:58:14.244755: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x12f66d0b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-03-01 12:58:14.244791: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-03-01 12:58:14.497564: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x12f6f54d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-03-01 12:58:14.497781: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-16GB, Compute Capability 7.0
+2021-03-01 12:58:14.501432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0004:04:00.0
+2021-03-01 12:58:14.501607: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-01 12:58:14.501664: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-03-01 12:58:14.501696: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-03-01 12:58:14.501726: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-03-01 12:58:14.501756: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-03-01 12:58:14.501785: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-03-01 12:58:14.501814: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-03-01 12:58:14.523846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-03-01 12:58:14.523997: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-03-01 12:58:36.286729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-03-01 12:58:36.286953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2021-03-01 12:58:36.286981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2021-03-01 12:58:36.291648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 14946 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0004:04:00.0, compute capability: 7.0)
+2021-03-01 12:58:40.138288: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-03-01 12:58:45.259590: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+Loading Model ...
+Iteration n: 0
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 49s 987us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 1
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 41us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 2
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 42us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 3
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 42us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 4
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 5
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 6
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 7
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 8
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 9
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 10
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 11
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 12
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 13
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 14
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 15
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 16
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 17
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 18
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 19
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 20
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 21
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 22
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 23
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 24
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 25
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 26
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 27
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 28
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 29
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 30
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 31
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 32
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 33
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 34
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 35
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 36
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 37
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 38
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 39
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 40
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 41
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 42
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 43
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 44
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 45
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 43us/sample
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 46
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 47
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 44us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 48
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 41us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+Iteration n: 49
+	Generating trajs ... Generating Trajectories ...
+50000/50000 [==============================] - 2s 41us/sample
+done.
+Computing Histo ...
+Computing SF ...
+Database shape ok, continuing...
+Taking entire dataset, None samples
+Converting database to fortran order
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.
+ From fortran: tau_index=                    1
+ From fortran: tau_index=                    2
+ From fortran: tau_index=                    3
+ From fortran: tau_index=                    4
+ From fortran: tau_index=                    5
+ From fortran: tau_index=                    6
+ From fortran: tau_index=                    7
+ From fortran: tau_index=                    8
+ From fortran: tau_index=                    9
+ From fortran: tau_index=                   10
+ From fortran: tau_index=                   11
+ From fortran: tau_index=                   12
+ From fortran: tau_index=                   13
+ From fortran: tau_index=                   14
+ From fortran: tau_index=                   15
+ From fortran: tau_index=                   16
+ From fortran: tau_index=                   17
+ From fortran: tau_index=                   18
+ From fortran: tau_index=                   19
+ From fortran: tau_index=                   20
+ From fortran: tau_index=                   21
+ From fortran: tau_index=                   22
+ From fortran: tau_index=                   23
+ From fortran: tau_index=                   24
+ From fortran: tau_index=                   25
+ From fortran: tau_index=                   26
+ From fortran: tau_index=                   27
+ From fortran: tau_index=                   28
+ From fortran: tau_index=                   29
+ From fortran: tau_index=                   30
+ From fortran: tau_index=                   31
+ From fortran: tau_index=                   32
+ From fortran: tau_index=                   33
+ From fortran: tau_index=                   34
+ Done.

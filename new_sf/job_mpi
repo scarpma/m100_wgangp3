@@ -1,0 +1,6 @@
+# to create a signature file
+f2py -m ou_mpi -h ou_mpi.pyf ou_mpi.f90
+
+# to compile the file
+f2py --f90exec=mpif90 -c helloworld.pyf helloworld.f90
+

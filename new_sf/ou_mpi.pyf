@@ -1,0 +1,39 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module ou_mpi ! in 
+    interface  ! in :ou_mpi
+        subroutine ou_generator(tau,h,ou) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) intent(in) :: tau
+            real(kind=8) intent(in) :: h
+            real(kind=8) dimension(:,:),intent(inout) :: ou
+        end subroutine ou_generator
+        subroutine r8_normal(uno) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) intent(inout) :: uno
+        end subroutine r8_normal
+        subroutine compute_struct_mixed(struct_bn,db) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) dimension(:,:),intent(inout) :: struct_bn
+            real(kind=8) dimension(:,:,:),intent(in) :: db
+        end subroutine compute_struct_mixed
+        subroutine compute_struct(struct_bn,db) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) dimension(:,:),intent(inout) :: struct_bn
+            real(kind=8) dimension(:,:),intent(in) :: db
+        end subroutine compute_struct
+        subroutine cor_func(db,acf) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) dimension(:,:),intent(inout) :: db
+            real(kind=8) dimension(:),intent(inout) :: acf
+        end subroutine cor_func
+        subroutine correlate(db,acf) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) dimension(:),intent(in) :: db
+            real(kind=8) dimension(:),intent(inout) :: acf
+        end subroutine correlate
+        subroutine histogram(xx,hist,bins) ! in :ou_mpi:ou_proc_mpi.f90
+            real(kind=8) dimension(:),intent(in) :: xx
+            integer dimension(:),intent(inout) :: hist
+            real(kind=8) dimension(:),intent(inout) :: bins
+        end subroutine histogram
+    end interface 
+end python module ou_mpi
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
