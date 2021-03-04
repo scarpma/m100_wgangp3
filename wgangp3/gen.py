@@ -89,7 +89,6 @@ def build_generator(fs, fm, init_sigma, init_mean, alpha, noise_dim):
 
     generator.summary()
 
-
     return generator
 
 
